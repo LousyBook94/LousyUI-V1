@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title">Card</h2>
+            <div class="divider"></div>
+            <div class="button-container">
+                <button type="button" class="btn add-btn">
+                    <span class="icon">+</span>
+                    <span class="text">Add</span>
+                </button>
+                <button type="button" class="btn remove-btn">
+                    <span class="icon">−</span>
+                    <span class="text">Remove</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="tabs-container">
+            <div class="tabs-wrapper">
+                <div class="tab active">
+                    <span class="tab-text">Tab 1</span>
+                    <button type="button" class="tab-close">×</button>
+                </div>
+                <div class="tab">
+                    <span class="tab-text">Tab 2</span>
+                    <button type="button" class="tab-close">×</button>
+                </div>
+                <div class="tab">
+                    <span class="tab-text">Tab 3</span>
+                    <button type="button" class="tab-close">×</button>
+                </div>
+                <div class="tab">
+                    <span class="tab-text">Tab 4</span>
+                    <button type="button" class="tab-close">×</button>
+                </div>
+                <button type="button" class="add-tab">+</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Checkbox Group -->
+                <div class="form-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input">
+                        <span class="checkbox-box"></span>
+                        <span class="checkbox-label">Unchecked</span>
+                    </label>
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" checked>
+                        <span class="checkbox-box"></span>
+                        <span class="checkbox-label">Checked</span>
+                    </label>
+                </div>
+
+                <!-- Radio Button Group -->
+                <div class="form-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="options" class="radio-input">
+                        <span class="radio-circle"></span>
+                        <span class="radio-label gradient-text-1">Option 1</span>
+                    </label>
+
+                    <label class="custom-radio">
+                        <input type="radio" name="options" class="radio-input" checked>
+                        <span class="radio-circle"></span>
+                        <span class="radio-label gradient-text-2">Option 2</span>
+                        <span class="noise-text">← Noise for text gradient</span>
+                    </label>
+
+                    <label class="custom-radio">
+                        <input type="radio" name="options" class="radio-input">
+                        <span class="radio-circle"></span>
+                        <span class="radio-label gradient-text-3">Option 3</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
